@@ -14,7 +14,11 @@
 --    You should have received a copy of the GNU General Public License
 --    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{-# LANGUAGE TypeFamilies, ViewPatterns, FlexibleContexts, FlexibleInstances, ConstraintKinds #-}
+{-# LANGUAGE TypeFamilies, 
+             ViewPatterns, 
+             FlexibleContexts, 
+             FlexibleInstances, 
+             ConstraintKinds #-}
 {-# OPTIONS_GHC -O2 #-}
 module Data.Image.Boxed(
   BoxedImage,

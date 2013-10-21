@@ -14,11 +14,11 @@
 --    You should have received a copy of the GNU General Public License
 --    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{-# LANGUAGE 
-   TypeFamilies, 
-   FlexibleContexts, 
-   FlexibleInstances, 
-   ViewPatterns #-}
+{-# LANGUAGE TypeFamilies, 
+             FlexibleContexts, 
+             FlexibleInstances, 
+             ViewPatterns,
+             ConstraintKinds #-}
 {-# OPTIONS_GHC -O2 #-}
 module Data.Image.Internal(-- * Images
                            Image(..), 
@@ -56,6 +56,7 @@ module Data.Image.Internal(-- * Images
 --base>=4
 import Data.Monoid
 import Data.List(sort)
+import GHC.Exts(Constraint)
 
 --array>=0.4.0.1
 import Data.Array.IArray
