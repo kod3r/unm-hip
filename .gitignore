@@ -3,6 +3,5 @@
 *.o
 *.*~
 .tmp-img
-Test.hs
 images/
 license-template
