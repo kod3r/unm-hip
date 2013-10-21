@@ -26,7 +26,8 @@ Library
   Extensions:     FlexibleContexts, 
                   FlexibleInstances, 
                   TypeFamilies, 
-                  ViewPatterns
+                  ViewPatterns,
+				  ConstraintKinds
 
   Exposed-Modules:Data.Image,
                   Data.Image.Arithmetic,

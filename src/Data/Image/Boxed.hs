@@ -14,7 +14,7 @@
 --    You should have received a copy of the GNU General Public License
 --    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{-# LANGUAGE TypeFamilies, ViewPatterns, FlexibleContexts, FlexibleInstances #-}
+{-# LANGUAGE TypeFamilies, ViewPatterns, FlexibleContexts, FlexibleInstances, ConstraintKinds #-}
 {-# OPTIONS_GHC -O2 #-}
 module Data.Image.Boxed(
   BoxedImage,
@@ -64,6 +64,7 @@ import Control.Applicative
 import qualified Data.Complex as C
 import Data.Maybe(fromJust)
 import Data.Monoid
+import GHC.Exts(Constraint)
 
 --bytestring-0.10.0.2
 import qualified Data.ByteString.Char8 as B
